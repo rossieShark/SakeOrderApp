@@ -1,0 +1,6 @@
+framework module Pods_orderApp_ver2_ {
+  umbrella header "Pods-orderApp(ver2)-umbrella.h"
+
+  export *
+  module * { export * }
+}
