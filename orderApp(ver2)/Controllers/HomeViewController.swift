@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
                 return
             }
             if let user = user {
-                self.label.text = "Hello, \(user.username)"
+                self.label.text = "こんにちは, \(user.username)"
             }
         }
 

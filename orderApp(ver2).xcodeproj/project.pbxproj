@@ -22,6 +22,10 @@
 		545E2F662A091CBE000E8B1F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E2F652A091CBE000E8B1F /* LoginViewController.swift */; };
 		545E2F682A091FD5000E8B1F /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E2F672A091FD5000E8B1F /* Validator.swift */; };
 		545E2F6A2A092018000E8B1F /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E2F692A092018000E8B1F /* AlertManager.swift */; };
+		548324DA2A0A590600E4B7FF /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548324D92A0A590600E4B7FF /* AboutAppViewController.swift */; };
+		548324DC2A0A5BC300E4B7FF /* UIView+Exstension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548324DB2A0A5BC300E4B7FF /* UIView+Exstension.swift */; };
+		548324DF2A0A5F3700E4B7FF /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548324DE2A0A5F3700E4B7FF /* OnboardingSlide.swift */; };
+		548324E12A0A627900E4B7FF /* AboutAppCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548324E02A0A627900E4B7FF /* AboutAppCollectionViewCell.swift */; };
 		549DBEE62A09900E00817498 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549DBEE52A09900E00817498 /* User.swift */; };
 		73D7AFAE4B4AAF3235F876EC /* Pods_orderApp_ver2_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B2EB366CBA1D0C917478EE /* Pods_orderApp_ver2_.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +48,10 @@
 		545E2F652A091CBE000E8B1F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		545E2F672A091FD5000E8B1F /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		545E2F692A092018000E8B1F /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		548324D92A0A590600E4B7FF /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
+		548324DB2A0A5BC300E4B7FF /* UIView+Exstension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Exstension.swift"; sourceTree = "<group>"; };
+		548324DE2A0A5F3700E4B7FF /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		548324E02A0A627900E4B7FF /* AboutAppCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppCollectionViewCell.swift; sourceTree = "<group>"; };
 		549DBEE52A09900E00817498 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		65B11A1DE09DCFF08E5F7491 /* Pods-orderApp(ver2).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orderApp(ver2).release.xcconfig"; path = "Target Support Files/Pods-orderApp(ver2)/Pods-orderApp(ver2).release.xcconfig"; sourceTree = "<group>"; };
 		69B2EB366CBA1D0C917478EE /* Pods_orderApp_ver2_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_orderApp_ver2_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +100,7 @@
 		545E2F452A091879000E8B1F /* orderApp(ver2) */ = {
 			isa = PBXGroup;
 			children = (
+				548324DD2A0A5BC700E4B7FF /* exstension */,
 				549DBEE72A0995FE00817498 /* Main */,
 				545E2F5E2A0918A8000E8B1F /* Support */,
 				545E2F5D2A0918A1000E8B1F /* Controllers */,
@@ -110,6 +119,7 @@
 				542C59E62A092F2E009F21A2 /* RegisterUserRequest.swift */,
 				542C59E82A092F44009F21A2 /* LoginUserRequest.swift */,
 				549DBEE52A09900E00817498 /* User.swift */,
+				548324DE2A0A5F3700E4B7FF /* OnboardingSlide.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,6 +131,8 @@
 				545E2F5F2A0918C6000E8B1F /* RegisterViewController.swift */,
 				545E2F612A0918D3000E8B1F /* HomeViewController.swift */,
 				545E2F632A0918E7000E8B1F /* ForgotPasswordViewController.swift */,
+				548324D92A0A590600E4B7FF /* AboutAppViewController.swift */,
+				548324E02A0A627900E4B7FF /* AboutAppCollectionViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -133,6 +145,14 @@
 				545E2F462A091879000E8B1F /* AppDelegate.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		548324DD2A0A5BC700E4B7FF /* exstension */ = {
+			isa = PBXGroup;
+			children = (
+				548324DB2A0A5BC300E4B7FF /* UIView+Exstension.swift */,
+			);
+			path = exstension;
 			sourceTree = "<group>";
 		};
 		549DBEE72A0995FE00817498 /* Main */ = {
@@ -270,14 +290,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				545E2F6A2A092018000E8B1F /* AlertManager.swift in Sources */,
+				548324DA2A0A590600E4B7FF /* AboutAppViewController.swift in Sources */,
 				545E2F662A091CBE000E8B1F /* LoginViewController.swift in Sources */,
 				542C59E92A092F44009F21A2 /* LoginUserRequest.swift in Sources */,
 				545E2F622A0918D3000E8B1F /* HomeViewController.swift in Sources */,
 				542C59E72A092F2E009F21A2 /* RegisterUserRequest.swift in Sources */,
+				548324DC2A0A5BC300E4B7FF /* UIView+Exstension.swift in Sources */,
 				542C59E52A092EA6009F21A2 /* AuthService.swift in Sources */,
 				545E2F642A0918E7000E8B1F /* ForgotPasswordViewController.swift in Sources */,
 				545E2F472A091879000E8B1F /* AppDelegate.swift in Sources */,
+				548324DF2A0A5F3700E4B7FF /* OnboardingSlide.swift in Sources */,
 				549DBEE62A09900E00817498 /* User.swift in Sources */,
+				548324E12A0A627900E4B7FF /* AboutAppCollectionViewCell.swift in Sources */,
 				545E2F682A091FD5000E8B1F /* Validator.swift in Sources */,
 				545E2F492A091879000E8B1F /* SceneDelegate.swift in Sources */,
 				545E2F602A0918C6000E8B1F /* RegisterViewController.swift in Sources */,
@@ -431,6 +455,7 @@
 				DEVELOPMENT_TEAM = M2CA28MP66;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "orderApp(ver2)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = saKe;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -464,6 +489,7 @@
 				DEVELOPMENT_TEAM = M2CA28MP66;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "orderApp(ver2)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = saKe;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

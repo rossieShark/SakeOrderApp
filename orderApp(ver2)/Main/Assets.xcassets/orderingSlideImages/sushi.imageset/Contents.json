@@ -1,16 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "sushi.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "restaurantLogo @2x.svg",
+      "filename" : "sushi@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "restaurantLogo @3x.svg",
+      "filename" : "sushi@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
