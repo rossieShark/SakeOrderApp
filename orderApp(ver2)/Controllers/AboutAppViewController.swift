@@ -31,6 +31,7 @@ class AboutAppViewController: UIViewController {
         collectionView.delegate = self
         
         slides = [OnboardingSlide(title: "Delicious Dishes", description: "Choose from sushi, over 60 different wines, sake, seasonal offerings", image: UIImage(named: "sushi")!), OnboardingSlide(title: "World-Class Chefs", description: "Our dishes are prepared by only the best", image: UIImage(named: "shef")!), OnboardingSlide(title: "Delivery & Reservation", description: "Your orders will be delivered instantly irrespactive of your location.", image: UIImage(named: "delivery")!)]
+        pageControl.numberOfPages = slides.count
 
         // Do any additional setup after loading the view.
     }

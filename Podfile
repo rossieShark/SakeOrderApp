@@ -8,6 +8,7 @@ pod 'FirebaseCore'
 pod 'FirebaseAuth'
 pod 'FirebaseFirestore'
 pod 'FirebaseStorage'
+pod 'Kingfisher'
 
   # Pods for orderApp(ver2)
 

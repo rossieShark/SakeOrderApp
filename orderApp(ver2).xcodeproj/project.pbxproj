@@ -26,6 +26,19 @@
 		548324DC2A0A5BC300E4B7FF /* UIView+Exstension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548324DB2A0A5BC300E4B7FF /* UIView+Exstension.swift */; };
 		548324DF2A0A5F3700E4B7FF /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548324DE2A0A5F3700E4B7FF /* OnboardingSlide.swift */; };
 		548324E12A0A627900E4B7FF /* AboutAppCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548324E02A0A627900E4B7FF /* AboutAppCollectionViewCell.swift */; };
+		548324E52A0B949A00E4B7FF /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548324E32A0B949A00E4B7FF /* CategoryCollectionViewCell.swift */; };
+		548324E62A0B949A00E4B7FF /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548324E42A0B949A00E4B7FF /* CategoryCollectionViewCell.xib */; };
+		548324E82A0B963800E4B7FF /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548324E72A0B963800E4B7FF /* DishCategory.swift */; };
+		548324EA2A0B9A4300E4B7FF /* String+Exstention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548324E92A0B9A4300E4B7FF /* String+Exstention.swift */; };
+		548324EC2A0B9AD000E4B7FF /* OrderFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548324EB2A0B9AD000E4B7FF /* OrderFoodViewController.swift */; };
+		548324EF2A0BA2A000E4B7FF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548324EE2A0BA2A000E4B7FF /* CardView.swift */; };
+		548324F42A0BACE200E4B7FF /* DishTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548324F22A0BACE200E4B7FF /* DishTypeCollectionViewCell.swift */; };
+		548324F52A0BACE200E4B7FF /* DishTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548324F32A0BACE200E4B7FF /* DishTypeCollectionViewCell.xib */; };
+		548324F72A0BAF1800E4B7FF /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548324F62A0BAF1800E4B7FF /* Dish.swift */; };
+		548324FB2A0BC0FD00E4B7FF /* DishLandscapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548324F92A0BC0FD00E4B7FF /* DishLandscapeCollectionViewCell.swift */; };
+		548324FC2A0BC0FD00E4B7FF /* DishLandscapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548324FA2A0BC0FD00E4B7FF /* DishLandscapeCollectionViewCell.xib */; };
+		548325012A0BD87200E4B7FF /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548325002A0BD87200E4B7FF /* DishDetailViewController.swift */; };
+		548325032A0BDAB100E4B7FF /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548325022A0BDAB100E4B7FF /* UIViewController+Extension.swift */; };
 		549DBEE62A09900E00817498 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549DBEE52A09900E00817498 /* User.swift */; };
 		73D7AFAE4B4AAF3235F876EC /* Pods_orderApp_ver2_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B2EB366CBA1D0C917478EE /* Pods_orderApp_ver2_.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +65,19 @@
 		548324DB2A0A5BC300E4B7FF /* UIView+Exstension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Exstension.swift"; sourceTree = "<group>"; };
 		548324DE2A0A5F3700E4B7FF /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		548324E02A0A627900E4B7FF /* AboutAppCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppCollectionViewCell.swift; sourceTree = "<group>"; };
+		548324E32A0B949A00E4B7FF /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		548324E42A0B949A00E4B7FF /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		548324E72A0B963800E4B7FF /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
+		548324E92A0B9A4300E4B7FF /* String+Exstention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Exstention.swift"; sourceTree = "<group>"; };
+		548324EB2A0B9AD000E4B7FF /* OrderFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFoodViewController.swift; sourceTree = "<group>"; };
+		548324EE2A0BA2A000E4B7FF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		548324F22A0BACE200E4B7FF /* DishTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		548324F32A0BACE200E4B7FF /* DishTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishTypeCollectionViewCell.xib; sourceTree = "<group>"; };
+		548324F62A0BAF1800E4B7FF /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		548324F92A0BC0FD00E4B7FF /* DishLandscapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishLandscapeCollectionViewCell.swift; sourceTree = "<group>"; };
+		548324FA2A0BC0FD00E4B7FF /* DishLandscapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandscapeCollectionViewCell.xib; sourceTree = "<group>"; };
+		548325002A0BD87200E4B7FF /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
+		548325022A0BDAB100E4B7FF /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		549DBEE52A09900E00817498 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		65B11A1DE09DCFF08E5F7491 /* Pods-orderApp(ver2).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orderApp(ver2).release.xcconfig"; path = "Target Support Files/Pods-orderApp(ver2)/Pods-orderApp(ver2).release.xcconfig"; sourceTree = "<group>"; };
 		69B2EB366CBA1D0C917478EE /* Pods_orderApp_ver2_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_orderApp_ver2_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +126,9 @@
 		545E2F452A091879000E8B1F /* orderApp(ver2) */ = {
 			isa = PBXGroup;
 			children = (
+				548324FE2A0BD80800E4B7FF /* Views */,
+				548324ED2A0BA27800E4B7FF /* CustomView */,
+				548324E22A0B945F00E4B7FF /* CollectionViewCell */,
 				548324DD2A0A5BC700E4B7FF /* exstension */,
 				549DBEE72A0995FE00817498 /* Main */,
 				545E2F5E2A0918A8000E8B1F /* Support */,
@@ -120,6 +149,8 @@
 				542C59E82A092F44009F21A2 /* LoginUserRequest.swift */,
 				549DBEE52A09900E00817498 /* User.swift */,
 				548324DE2A0A5F3700E4B7FF /* OnboardingSlide.swift */,
+				548324E72A0B963800E4B7FF /* DishCategory.swift */,
+				548324F62A0BAF1800E4B7FF /* Dish.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -132,7 +163,7 @@
 				545E2F612A0918D3000E8B1F /* HomeViewController.swift */,
 				545E2F632A0918E7000E8B1F /* ForgotPasswordViewController.swift */,
 				548324D92A0A590600E4B7FF /* AboutAppViewController.swift */,
-				548324E02A0A627900E4B7FF /* AboutAppCollectionViewCell.swift */,
+				548324EB2A0B9AD000E4B7FF /* OrderFoodViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -151,8 +182,72 @@
 			isa = PBXGroup;
 			children = (
 				548324DB2A0A5BC300E4B7FF /* UIView+Exstension.swift */,
+				548324E92A0B9A4300E4B7FF /* String+Exstention.swift */,
+				548325022A0BDAB100E4B7FF /* UIViewController+Extension.swift */,
 			);
 			path = exstension;
+			sourceTree = "<group>";
+		};
+		548324E22A0B945F00E4B7FF /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				548324F82A0BC0B900E4B7FF /* DishLandscapeCollectionViewCell */,
+				548324F12A0BAC9000E4B7FF /* DishTypeCollectionViewCell */,
+				548324F02A0BAC7400E4B7FF /* CategoryCollectionViewCell */,
+				548324E02A0A627900E4B7FF /* AboutAppCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		548324ED2A0BA27800E4B7FF /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				548324EE2A0BA2A000E4B7FF /* CardView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		548324F02A0BAC7400E4B7FF /* CategoryCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				548324E32A0B949A00E4B7FF /* CategoryCollectionViewCell.swift */,
+				548324E42A0B949A00E4B7FF /* CategoryCollectionViewCell.xib */,
+			);
+			path = CategoryCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		548324F12A0BAC9000E4B7FF /* DishTypeCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				548324F22A0BACE200E4B7FF /* DishTypeCollectionViewCell.swift */,
+				548324F32A0BACE200E4B7FF /* DishTypeCollectionViewCell.xib */,
+			);
+			path = DishTypeCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		548324F82A0BC0B900E4B7FF /* DishLandscapeCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				548324F92A0BC0FD00E4B7FF /* DishLandscapeCollectionViewCell.swift */,
+				548324FA2A0BC0FD00E4B7FF /* DishLandscapeCollectionViewCell.xib */,
+			);
+			path = DishLandscapeCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		548324FE2A0BD80800E4B7FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				548324FF2A0BD82E00E4B7FF /* DishDetail */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		548324FF2A0BD82E00E4B7FF /* DishDetail */ = {
+			isa = PBXGroup;
+			children = (
+				548325002A0BD87200E4B7FF /* DishDetailViewController.swift */,
+			);
+			path = DishDetail;
 			sourceTree = "<group>";
 		};
 		549DBEE72A0995FE00817498 /* Main */ = {
@@ -234,8 +329,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				545E2F532A09187B000E8B1F /* LaunchScreen.storyboard in Resources */,
+				548324E62A0B949A00E4B7FF /* CategoryCollectionViewCell.xib in Resources */,
+				548324F52A0BACE200E4B7FF /* DishTypeCollectionViewCell.xib in Resources */,
 				542C59ED2A09331D009F21A2 /* GoogleService-Info.plist in Resources */,
 				545E2F502A09187B000E8B1F /* Assets.xcassets in Resources */,
+				548324FC2A0BC0FD00E4B7FF /* DishLandscapeCollectionViewCell.xib in Resources */,
 				545E2F4E2A091879000E8B1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,18 +389,28 @@
 			files = (
 				545E2F6A2A092018000E8B1F /* AlertManager.swift in Sources */,
 				548324DA2A0A590600E4B7FF /* AboutAppViewController.swift in Sources */,
+				548324FB2A0BC0FD00E4B7FF /* DishLandscapeCollectionViewCell.swift in Sources */,
+				548324F42A0BACE200E4B7FF /* DishTypeCollectionViewCell.swift in Sources */,
 				545E2F662A091CBE000E8B1F /* LoginViewController.swift in Sources */,
+				548324EC2A0B9AD000E4B7FF /* OrderFoodViewController.swift in Sources */,
+				548324E52A0B949A00E4B7FF /* CategoryCollectionViewCell.swift in Sources */,
 				542C59E92A092F44009F21A2 /* LoginUserRequest.swift in Sources */,
 				545E2F622A0918D3000E8B1F /* HomeViewController.swift in Sources */,
+				548324EF2A0BA2A000E4B7FF /* CardView.swift in Sources */,
+				548324F72A0BAF1800E4B7FF /* Dish.swift in Sources */,
 				542C59E72A092F2E009F21A2 /* RegisterUserRequest.swift in Sources */,
+				548324E82A0B963800E4B7FF /* DishCategory.swift in Sources */,
 				548324DC2A0A5BC300E4B7FF /* UIView+Exstension.swift in Sources */,
+				548325032A0BDAB100E4B7FF /* UIViewController+Extension.swift in Sources */,
 				542C59E52A092EA6009F21A2 /* AuthService.swift in Sources */,
 				545E2F642A0918E7000E8B1F /* ForgotPasswordViewController.swift in Sources */,
+				548325012A0BD87200E4B7FF /* DishDetailViewController.swift in Sources */,
 				545E2F472A091879000E8B1F /* AppDelegate.swift in Sources */,
 				548324DF2A0A5F3700E4B7FF /* OnboardingSlide.swift in Sources */,
 				549DBEE62A09900E00817498 /* User.swift in Sources */,
 				548324E12A0A627900E4B7FF /* AboutAppCollectionViewCell.swift in Sources */,
 				545E2F682A091FD5000E8B1F /* Validator.swift in Sources */,
+				548324EA2A0B9A4300E4B7FF /* String+Exstention.swift in Sources */,
 				545E2F492A091879000E8B1F /* SceneDelegate.swift in Sources */,
 				545E2F602A0918C6000E8B1F /* RegisterViewController.swift in Sources */,
 			);
