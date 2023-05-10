@@ -501,8 +501,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="saKe" id="FWJ-O7-v0J">
+                        <barButtonItem key="backBarButtonItem" title=" " id="gOh-68-KrQ"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="cart.fill.badge.plus" catalog="system" id="rgN-pw-Hpf">
                             <color key="tintColor" red="0.4431372549" green="0.074509803920000006" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="Z6p-iR-cae" kind="show" id="0QI-be-CcG"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -514,6 +518,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAg-Qh-NXk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2588.5496183206105" y="1393.661971830986"/>
+        </scene>
+        <!--List Orders View Controller-->
+        <scene sceneID="ZMe-dk-nbf">
+            <objects>
+                <viewController storyboardIdentifier="ListOrdersViewController" modalPresentationStyle="fullScreen" id="Z6p-iR-cae" customClass="ListOrdersViewController" customModule="orderApp_ver2_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YiD-8E-1rZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="a0E-yf-p3e">
+                                <rect key="frame" x="0.0" y="56" width="393" height="786"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Z6p-iR-cae" id="DXz-x2-Oue"/>
+                                    <outlet property="delegate" destination="Z6p-iR-cae" id="xbx-3J-ehk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bs5-IQ-Gqn"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a0E-yf-p3e" firstAttribute="leading" secondItem="bs5-IQ-Gqn" secondAttribute="leading" id="5dw-Ya-Kbb"/>
+                            <constraint firstItem="bs5-IQ-Gqn" firstAttribute="bottom" secondItem="a0E-yf-p3e" secondAttribute="bottom" id="ELq-8C-t1X"/>
+                            <constraint firstItem="a0E-yf-p3e" firstAttribute="top" secondItem="bs5-IQ-Gqn" secondAttribute="top" id="MRh-ou-cQS"/>
+                            <constraint firstItem="bs5-IQ-Gqn" firstAttribute="trailing" secondItem="a0E-yf-p3e" secondAttribute="trailing" id="hrS-VW-xZ8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hnf-dy-bnY"/>
+                    <connections>
+                        <outlet property="tableView" destination="a0E-yf-p3e" id="ZtJ-C5-Ytw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f3Z-jy-nES" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2589" y="2077"/>
         </scene>
         <!--Dish Detail View Controller-->
         <scene sceneID="vN0-tV-PdI">
@@ -616,6 +655,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ioo-fR-1Y4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3277.0992366412211" y="1393.661971830986"/>
+        </scene>
+        <!--List Dishes View Controller-->
+        <scene sceneID="Xgk-Df-w1H">
+            <objects>
+                <viewController storyboardIdentifier="ListDishesViewController" id="FBI-bh-miq" customClass="ListDishesViewController" customModule="orderApp_ver2_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mTY-Qt-RCu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9sc-cq-Jpg">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="FBI-bh-miq" id="e39-E7-bXd"/>
+                                    <outlet property="delegate" destination="FBI-bh-miq" id="Fqk-yl-wb7"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xb1-0U-p12"/>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9sc-cq-Jpg" firstAttribute="top" secondItem="Xb1-0U-p12" secondAttribute="top" id="EGJ-79-haT"/>
+                            <constraint firstItem="Xb1-0U-p12" firstAttribute="trailing" secondItem="9sc-cq-Jpg" secondAttribute="trailing" id="NoK-eV-BMn"/>
+                            <constraint firstItem="9sc-cq-Jpg" firstAttribute="leading" secondItem="Xb1-0U-p12" secondAttribute="leading" id="YsG-Ad-xQ2"/>
+                            <constraint firstItem="Xb1-0U-p12" firstAttribute="bottom" secondItem="9sc-cq-Jpg" secondAttribute="bottom" id="c87-AW-Ywy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="9sc-cq-Jpg" id="gLx-ky-9aF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GDk-f4-7Wb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3993" y="1394"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8z0-Nn-7oq">

@@ -96,7 +96,9 @@ extension OrderFoodViewController: UICollectionViewDelegate, UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == categoryCollectionView {
-            
+            let controller = ListDishesViewController.instantiate()
+            controller.category = categories[indexPath.row]
+            navigationController?.pushViewController(controller, animated: true)
         } else {
             let controller = DishDetailViewController.instantiate()
             controller.dish = collectionView == popularDishesCollectionView ? popularDishes[indexPath.row] : chefsSpetials[indexPath.row]

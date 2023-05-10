@@ -40,6 +40,11 @@
 		548325012A0BD87200E4B7FF /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548325002A0BD87200E4B7FF /* DishDetailViewController.swift */; };
 		548325032A0BDAB100E4B7FF /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548325022A0BDAB100E4B7FF /* UIViewController+Extension.swift */; };
 		549DBEE62A09900E00817498 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549DBEE52A09900E00817498 /* User.swift */; };
+		54B8983A2A0C2909007F12F9 /* DishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B898382A0C2909007F12F9 /* DishListTableViewCell.swift */; };
+		54B8983B2A0C2909007F12F9 /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B898392A0C2909007F12F9 /* DishListTableViewCell.xib */; };
+		54B8983E2A0C2D0E007F12F9 /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8983D2A0C2D0E007F12F9 /* ListDishesViewController.swift */; };
+		54B898412A0C3247007F12F9 /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B898402A0C3247007F12F9 /* ListOrdersViewController.swift */; };
+		54B898432A0C33EA007F12F9 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B898422A0C33EA007F12F9 /* Order.swift */; };
 		73D7AFAE4B4AAF3235F876EC /* Pods_orderApp_ver2_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B2EB366CBA1D0C917478EE /* Pods_orderApp_ver2_.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +84,11 @@
 		548325002A0BD87200E4B7FF /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
 		548325022A0BDAB100E4B7FF /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		549DBEE52A09900E00817498 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		54B898382A0C2909007F12F9 /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
+		54B898392A0C2909007F12F9 /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
+		54B8983D2A0C2D0E007F12F9 /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
+		54B898402A0C3247007F12F9 /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
+		54B898422A0C33EA007F12F9 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		65B11A1DE09DCFF08E5F7491 /* Pods-orderApp(ver2).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orderApp(ver2).release.xcconfig"; path = "Target Support Files/Pods-orderApp(ver2)/Pods-orderApp(ver2).release.xcconfig"; sourceTree = "<group>"; };
 		69B2EB366CBA1D0C917478EE /* Pods_orderApp_ver2_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_orderApp_ver2_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E2ECC909239655C12DA4F62 /* Pods-orderApp(ver2).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orderApp(ver2).debug.xcconfig"; path = "Target Support Files/Pods-orderApp(ver2)/Pods-orderApp(ver2).debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +161,7 @@
 				548324DE2A0A5F3700E4B7FF /* OnboardingSlide.swift */,
 				548324E72A0B963800E4B7FF /* DishCategory.swift */,
 				548324F62A0BAF1800E4B7FF /* Dish.swift */,
+				54B898422A0C33EA007F12F9 /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,6 +213,7 @@
 		548324ED2A0BA27800E4B7FF /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				54B898362A0C2897007F12F9 /* TableViewCell */,
 				548324EE2A0BA2A000E4B7FF /* CardView.swift */,
 			);
 			path = CustomView;
@@ -237,6 +249,8 @@
 		548324FE2A0BD80800E4B7FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				54B8983F2A0C3231007F12F9 /* ListOrders */,
+				54B8983C2A0C2CE0007F12F9 /* ListDishes */,
 				548324FF2A0BD82E00E4B7FF /* DishDetail */,
 			);
 			path = Views;
@@ -258,6 +272,39 @@
 				545E2F4C2A091879000E8B1F /* Main.storyboard */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		54B898362A0C2897007F12F9 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				54B898372A0C28D0007F12F9 /* DishListTableViewCell */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		54B898372A0C28D0007F12F9 /* DishListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				54B898382A0C2909007F12F9 /* DishListTableViewCell.swift */,
+				54B898392A0C2909007F12F9 /* DishListTableViewCell.xib */,
+			);
+			path = DishListTableViewCell;
+			sourceTree = "<group>";
+		};
+		54B8983C2A0C2CE0007F12F9 /* ListDishes */ = {
+			isa = PBXGroup;
+			children = (
+				54B8983D2A0C2D0E007F12F9 /* ListDishesViewController.swift */,
+			);
+			path = ListDishes;
+			sourceTree = "<group>";
+		};
+		54B8983F2A0C3231007F12F9 /* ListOrders */ = {
+			isa = PBXGroup;
+			children = (
+				54B898402A0C3247007F12F9 /* ListOrdersViewController.swift */,
+			);
+			path = ListOrders;
 			sourceTree = "<group>";
 		};
 		F07C8EF20FC7E9AAA6CE1992 /* Frameworks */ = {
@@ -329,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				545E2F532A09187B000E8B1F /* LaunchScreen.storyboard in Resources */,
+				54B8983B2A0C2909007F12F9 /* DishListTableViewCell.xib in Resources */,
 				548324E62A0B949A00E4B7FF /* CategoryCollectionViewCell.xib in Resources */,
 				548324F52A0BACE200E4B7FF /* DishTypeCollectionViewCell.xib in Resources */,
 				542C59ED2A09331D009F21A2 /* GoogleService-Info.plist in Resources */,
@@ -387,6 +435,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B8983E2A0C2D0E007F12F9 /* ListDishesViewController.swift in Sources */,
 				545E2F6A2A092018000E8B1F /* AlertManager.swift in Sources */,
 				548324DA2A0A590600E4B7FF /* AboutAppViewController.swift in Sources */,
 				548324FB2A0BC0FD00E4B7FF /* DishLandscapeCollectionViewCell.swift in Sources */,
@@ -401,13 +450,16 @@
 				542C59E72A092F2E009F21A2 /* RegisterUserRequest.swift in Sources */,
 				548324E82A0B963800E4B7FF /* DishCategory.swift in Sources */,
 				548324DC2A0A5BC300E4B7FF /* UIView+Exstension.swift in Sources */,
+				54B8983A2A0C2909007F12F9 /* DishListTableViewCell.swift in Sources */,
 				548325032A0BDAB100E4B7FF /* UIViewController+Extension.swift in Sources */,
 				542C59E52A092EA6009F21A2 /* AuthService.swift in Sources */,
+				54B898412A0C3247007F12F9 /* ListOrdersViewController.swift in Sources */,
 				545E2F642A0918E7000E8B1F /* ForgotPasswordViewController.swift in Sources */,
 				548325012A0BD87200E4B7FF /* DishDetailViewController.swift in Sources */,
 				545E2F472A091879000E8B1F /* AppDelegate.swift in Sources */,
 				548324DF2A0A5F3700E4B7FF /* OnboardingSlide.swift in Sources */,
 				549DBEE62A09900E00817498 /* User.swift in Sources */,
+				54B898432A0C33EA007F12F9 /* Order.swift in Sources */,
 				548324E12A0A627900E4B7FF /* AboutAppCollectionViewCell.swift in Sources */,
 				545E2F682A091FD5000E8B1F /* Validator.swift in Sources */,
 				548324EA2A0B9A4300E4B7FF /* String+Exstention.swift in Sources */,
