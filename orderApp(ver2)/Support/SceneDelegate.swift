@@ -38,7 +38,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             initialViewController = mainStoryboard.instantiateViewController(withIdentifier: "MainViewController") as! LoginViewController // 'MainController' is the storyboard id of MainViewController
         } else {
             //If not logged in then show LoginViewController
-            initialViewController = mainStoryboard.instantiateViewController(withIdentifier: "HomeController") as! HomeViewController// 'LoginController' is the storyboard id of LoginViewController
+            initialViewController = mainStoryboard.instantiateViewController(withIdentifier: "SakeTabBarController") as! SakeTabBarController// 'LoginController' is the storyboard id of LoginViewController
             
         }
         self.window?.rootViewController = initialViewController

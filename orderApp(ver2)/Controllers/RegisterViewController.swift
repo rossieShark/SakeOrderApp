@@ -12,6 +12,8 @@ class RegisterViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var usernameLabel: UITextField!
     @IBOutlet weak var emailLabel: UITextField!
     @IBOutlet weak var passwordLabel: UITextField!
+    @IBOutlet weak var nameLabel: UITextField!
+    @IBOutlet weak var phoneNumber: UITextField!
     @IBOutlet weak var signUpButtonLabel: UIButton!
     @IBOutlet weak var privacyPolicy: UITextView!
     
@@ -50,6 +52,7 @@ class RegisterViewController: UIViewController, UITextViewDelegate {
             AlertManager.showInvalidPasswordAlert(on: self)
             return
         }
+        
         
         AuthService.shared.registerUser(with: registerUserRequest) { [weak self] wasRegistered, error in
             guard let self = self else { return }

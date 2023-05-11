@@ -8,9 +8,16 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    let userDef = UserDefaults.standard
 
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var logOutButton: UIButton!
+    @IBOutlet weak var logOutButton: UIBarButtonItem!
+    @IBOutlet weak var phoneNumberLabel: UITextField!
+    @IBOutlet weak var nameLabel: UITextField!
+    @IBOutlet weak var addressLabel: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         AuthService.shared.fetchUser { [weak self] user, error in
@@ -23,11 +30,22 @@ class HomeViewController: UIViewController {
                 self.label.text = "こんにちは, \(user.username)"
             }
         }
+        
+        
+        nameLabel.text = userDef.string(forKey: "name")
+        phoneNumberLabel.text = userDef.string(forKey: "phoneNumber")
+        addressLabel.text = userDef.string(forKey: "address")
 
         // Do any additional setup after loading the view.
     }
     
 
+    @IBAction func saveButtonAction(_ sender: Any) {
+        userDef.setValue(nameLabel.text, forKey: "name")
+        userDef.setValue(phoneNumberLabel.text, forKey: "phoneNumber")
+        userDef.setValue(addressLabel.text, forKey: "address")
+        
+    }
     /*
     // MARK: - Navigation
 

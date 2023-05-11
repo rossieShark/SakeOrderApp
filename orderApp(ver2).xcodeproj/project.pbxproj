@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5412A6392A0CD12100E6B54F /* SakeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5412A6382A0CD12100E6B54F /* SakeTabBarController.swift */; };
+		5412A63B2A0CD6A600E6B54F /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5412A63A2A0CD6A600E6B54F /* ReservationViewController.swift */; };
 		542C59E52A092EA6009F21A2 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542C59E42A092EA6009F21A2 /* AuthService.swift */; };
 		542C59E72A092F2E009F21A2 /* RegisterUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542C59E62A092F2E009F21A2 /* RegisterUserRequest.swift */; };
 		542C59E92A092F44009F21A2 /* LoginUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542C59E82A092F44009F21A2 /* LoginUserRequest.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5412A6382A0CD12100E6B54F /* SakeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SakeTabBarController.swift; sourceTree = "<group>"; };
+		5412A63A2A0CD6A600E6B54F /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
 		542C59E42A092EA6009F21A2 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		542C59E62A092F2E009F21A2 /* RegisterUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserRequest.swift; sourceTree = "<group>"; };
 		542C59E82A092F44009F21A2 /* LoginUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserRequest.swift; sourceTree = "<group>"; };
@@ -175,6 +179,8 @@
 				545E2F632A0918E7000E8B1F /* ForgotPasswordViewController.swift */,
 				548324D92A0A590600E4B7FF /* AboutAppViewController.swift */,
 				548324EB2A0B9AD000E4B7FF /* OrderFoodViewController.swift */,
+				5412A6382A0CD12100E6B54F /* SakeTabBarController.swift */,
+				5412A63A2A0CD6A600E6B54F /* ReservationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -446,6 +452,7 @@
 				542C59E92A092F44009F21A2 /* LoginUserRequest.swift in Sources */,
 				545E2F622A0918D3000E8B1F /* HomeViewController.swift in Sources */,
 				548324EF2A0BA2A000E4B7FF /* CardView.swift in Sources */,
+				5412A63B2A0CD6A600E6B54F /* ReservationViewController.swift in Sources */,
 				548324F72A0BAF1800E4B7FF /* Dish.swift in Sources */,
 				542C59E72A092F2E009F21A2 /* RegisterUserRequest.swift in Sources */,
 				548324E82A0B963800E4B7FF /* DishCategory.swift in Sources */,
@@ -455,6 +462,7 @@
 				542C59E52A092EA6009F21A2 /* AuthService.swift in Sources */,
 				54B898412A0C3247007F12F9 /* ListOrdersViewController.swift in Sources */,
 				545E2F642A0918E7000E8B1F /* ForgotPasswordViewController.swift in Sources */,
+				5412A6392A0CD12100E6B54F /* SakeTabBarController.swift in Sources */,
 				548325012A0BD87200E4B7FF /* DishDetailViewController.swift in Sources */,
 				545E2F472A091879000E8B1F /* AppDelegate.swift in Sources */,
 				548324DF2A0A5F3700E4B7FF /* OnboardingSlide.swift in Sources */,
